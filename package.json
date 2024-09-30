@@ -1,0 +1,15 @@
+{
+  "name": "catalogo-digital",
+  "version": "1.0.0",
+  "description": "catalogo com carrinho e api de wpp web para encaminhar os pedidos, esse projeto visa tornar mais eficiente o processo de compra e venda.",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./estilo/style.css -o ./estilo/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}
