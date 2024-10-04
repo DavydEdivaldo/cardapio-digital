@@ -739,6 +739,30 @@ video {
   margin-top: 2.25rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -838,8 +862,16 @@ video {
   display: none;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .h-32 {
   height: 8rem;
+}
+
+.h-\[400px\] {
+  height: 400px;
 }
 
 .h-\[420px\] {
@@ -850,24 +882,16 @@ video {
   height: 100%;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[400px\] {
-  height: 400px;
+.w-28 {
+  width: 7rem;
 }
 
 .w-32 {
   width: 8rem;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .w-\[this-is\\\\\] {
@@ -884,26 +908,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[500\] {
-  width: 500;
-}
-
-.w-\[500px\] {
-  width: 500px;
-}
-
-.w-\[400px\] {
-  width: 400px;
 }
 
 .flex-shrink {
@@ -1240,6 +1244,18 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1422,6 +1438,10 @@ video {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1877,13 +1897,18 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
-.bg-home {
-  background-image: url('../imagens/background-escuro.png');
+.bg-capa-over {
+  background-image: url('../imagens/modelo3.jpg');
 }
 
 .decoration-slice {
@@ -2029,6 +2054,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2093,6 +2123,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -2575,6 +2610,17 @@ body{
     -3px -3px 7px #05e91180;
 }
 
+.add-to-cart-btn{
+  background: #ad5389;
+  background: linear-gradient(
+      0deg,
+      rgba(20, 167, 62, 1) 0%,
+      rgba(102, 247, 113, 1) 100%
+    );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2659,3 +2705,4 @@ body{
     }
   }
 }
+
