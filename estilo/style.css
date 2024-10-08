@@ -29,3 +29,16 @@ body{
     box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
 }
 
+.espaçamento >div{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .espaçamento{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    }
+}
