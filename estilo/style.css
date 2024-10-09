@@ -34,6 +34,13 @@ body{
     text-align: center;
 }
 
+.bg-capa-over{
+    background-image: url("../imagens/modelo3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media (max-width: 800px) {
     .espaçamento{
         display: flex;

@@ -715,6 +715,15 @@ video {
   clear: none;
 }
 
+.m-auto {
+  margin: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -729,6 +738,10 @@ video {
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mt-2 {
@@ -892,6 +905,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-xs {
+  max-width: 20rem;
+}
+
+.max-w-7 {
+  max-width: 1.75rem;
 }
 
 .flex-shrink {
@@ -1887,8 +1908,8 @@ video {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
-.bg-capa-over {
-  background-image: url('../imagens/modelo3.jpg');
+.bg-home {
+  background-image: url('../imagens/background-escuro.png');
 }
 
 .decoration-slice {
@@ -2606,6 +2627,13 @@ body{
   text-align: center;
 }
 
+.bg-capa-over{
+  background-image: url("../imagens/modelo3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 800px) {
   .espaçamento{
     display: flex;
@@ -2686,6 +2714,18 @@ body{
 }
 
 @media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:place-items-center {
+    place-items: center;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;

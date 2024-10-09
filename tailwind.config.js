@@ -2,12 +2,9 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {
+    extend:{
       backgroundImage:{
         "home":"url('../imagens/background-escuro.png')"
-      },
-      backgroundImage:{
-       "capa-over":"url('../imagens/modelo3.jpg')" 
       }
     },
   },
