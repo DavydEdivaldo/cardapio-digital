@@ -34,8 +34,8 @@ body{
     text-align: center;
 }
 
-.bg-capa-over{
-    background-image: url("../imagens/modelo3.jpg");
+.bg-capa-hamburguer{
+    background-image: url("../imagens/food-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
