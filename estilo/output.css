@@ -659,6 +659,10 @@ video {
   inset: -0.25rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -669,6 +673,10 @@ video {
 
 .isolation-auto {
   isolation: auto;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .float-start {
@@ -2620,7 +2628,7 @@ body{
 }
 
 .bg-capa-hamburguer{
-  background-image: url("../imagens/food-background.jpg");
+  background-image: url("../imagens/background-hamburger.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2632,6 +2640,39 @@ body{
     flex-direction: column;
     justify-content: center;
     justify-items: center;
+  }
+}
+
+@media (max-width: 490px) {
+  .responsive-title{
+    font-size: 20px;
+  }
+
+  .responsive-span{
+    font-size: 15px;
+  }
+
+  .text-responsivo{
+    font-size: 12px;
+  }
+
+  .botao-icon-responsivo{
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 438px) {
+  .text-responsivo{
+    font-size: 11px;
+  }
+
+  .botao-icon-responsivo{
+    padding-top: 2px;
+  }
+
+  .espaçamento > img{
+    width: 300px;
+    height: 300px;
   }
 }
 
