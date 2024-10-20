@@ -34,6 +34,7 @@ body{
     text-align: center;
 }
 
+
 .bg-capa-hamburguer{
     background-image: url("../imagens/background-hamburger.jpg");
     background-position: center;
@@ -41,14 +42,7 @@ body{
     background-size: cover;
 }
 
-@media (max-width: 800px) {
-    .espaçamento{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-    }
-}
+
 @media (max-width: 490px) {
     .responsive-title{
         font-size: 20px;
@@ -63,7 +57,12 @@ body{
     .botao-icon-responsivo{
         padding-top: 5px;
     }
+    .mobile{
+        width: 250px;
+        height: 250px;
+    }
 }
+
 @media (max-width: 438px) {
     .text-responsivo{
         font-size: 11px;
@@ -71,7 +70,10 @@ body{
     .botao-icon-responsivo{
         padding-top: 2px;
     }
-    .espaçamento > img{
+
+}
+@media(max-width: 800px){
+    .mobile{
         width: 300px;
         height: 300px;
     }
