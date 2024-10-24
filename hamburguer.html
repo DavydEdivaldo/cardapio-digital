@@ -99,8 +99,21 @@
    </div>
 
    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-50 place-content-center place-items-center"><!--carrinho-->
-    <div class="bg-white rounded-lg w-[85%] h-auto m-auto md:w-[550px] py-1">
+    <div class="bg-white p-5 rounded-lg w-[85%] h-auto m-auto md:w-[550px] py-1">
       <h3 class="text-center font-bold mb-2">Meu carrinho</h3>
+
+      <div id="cart-items" class="flex justify-between mb-2 flex-col">porduto</div>
+
+      <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+      <p class="font-bold mt-4">Endereço de entrega:</p>
+      <input type="text" placeholder="Digite seu endereço completo" id="addres" class="w-full border-2 p-1 rounded my-1">
+
+      <p class="text-red-500 hidden" id="adress-warn">Digite seu endereço completo</p>
+
+      <div class="flex items-center justify-between mt-3 mb-1 w-full">
+        <button id="fechar">Fechar</button>
+        <button id="enviar-pedido-btn" class=" px-3 rounded add-to-cart-btn mr-2 text-white">Finalizar pedido</button>
+      </div>
     </div>
    </div><!--fim carrinho-->
 

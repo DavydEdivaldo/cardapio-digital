@@ -675,10 +675,6 @@ video {
   top: 0px;
 }
 
-.top-\[30\%\] {
-  top: 30%;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -748,14 +744,9 @@ video {
   margin-right: auto;
 }
 
-.my-px {
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .mb-2 {
@@ -778,10 +769,6 @@ video {
   margin-right: 0.5rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -796,6 +783,14 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .box-border {
@@ -917,12 +912,12 @@ video {
   height: 500px;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-auto {
   height: auto;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-28 {
@@ -933,12 +928,12 @@ video {
   width: 8rem;
 }
 
-.w-\[350px\] {
-  width: 350px;
-}
-
 .w-\[400px\] {
   width: 400px;
+}
+
+.w-\[85\%\] {
+  width: 85%;
 }
 
 .w-\[this-is\\\\\] {
@@ -955,18 +950,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[90\] {
-  width: 90;
-}
-
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.w-\[85\%\] {
-  width: 85%;
 }
 
 .flex-shrink {
@@ -1889,6 +1872,10 @@ video {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -2093,6 +2080,18 @@ video {
      object-fit: scale-down;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2273,6 +2272,11 @@ video {
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2801,16 +2805,6 @@ body{
   text-align: center;
 }
 
-@media not all and (min-width: 1024px) {
-  .max-lg\:w-\[\] {
-    width: ;
-  }
-
-  .max-lg\:w-\[500px\] {
-    width: 500px;
-  }
-}
-
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
@@ -2818,14 +2812,6 @@ body{
 }
 
 @media (min-width: 768px) {
-  .md\:w-\[500px\] {
-    width: 500px;
-  }
-
-  .md\:w-\[050px\] {
-    width: 050px;
-  }
-
   .md\:w-\[550px\] {
     width: 550px;
   }
@@ -2841,12 +2827,6 @@ body{
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:w-\[500px\] {
-    width: 500px;
   }
 }
 
