@@ -102,11 +102,43 @@
     <div class="bg-white p-5 rounded-lg w-[85%] h-auto m-auto md:w-[550px] py-1">
       <h3 class="text-center font-bold mb-2">Meu carrinho</h3>
 
-      <div id="cart-items" class="flex justify-between mb-2 flex-col">porduto</div>
+      <div id="cart-items" class="flex justify-between mb-2 flex-col">
+
+        <div class="flex items-center gap-2 mb-[7px]">
+          <div>
+            <img class="w-[80px] h-[80px] rounded" src="./imagens/hamburguer.jpg" alt="produto">
+          </div>
+          <div class="w-[50%] text-xs">
+          <p class="font-bold">Hamburguer 4</p>
+          <p class="text-sm text-responsivo">150g de Blend de Fraldinha, servido no pão tostado, 
+            bacon, cheddar, cebola caramelizada, salada 
+            e molho especial</p>
+          </div> 
+          <div class="ml-10">
+            <button class="text-gray-500">remover</button>
+          </div> 
+        </div>
+
+        <div class="flex items-center gap-2 mb[7px]">
+          <div>
+            <img class="w-[80px] h-[80px] rounded" src="./imagens/hamburguer.jpg" alt="produto">
+          </div>
+          <div class="w-[50%] text-xs">
+          <p class="font-bold">Hamburguer 4</p>
+          <p class="text-sm text-responsivo">150g de Blend de Fraldinha, servido no pão tostado, 
+            bacon, cheddar, cebola caramelizada, salada 
+            e molho especial</p>
+          </div>  
+          <div class="ml-10">
+            <button class="text-gray-500">remover</button>
+          </div>
+        </div>
+        
+      </div>
 
       <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
       <p class="font-bold mt-4">Endereço de entrega:</p>
-      <input type="text" placeholder="Digite seu endereço completo" id="addres" class="w-full border-2 p-1 rounded my-1">
+      <input type="text" placeholder="Endereço completo, com numero e ponto de referência" id="addres" class="w-full border-2 p-1 rounded my-1">
 
       <p class="text-red-500 hidden" id="adress-warn">Digite seu endereço completo</p>
 
