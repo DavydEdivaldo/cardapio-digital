@@ -24,7 +24,7 @@
       </div>
     </header>
 
-   <div>
+   <div id="menu">
     <main class="mt-4 grid grid-cols-1 md:grid-cols-2 md:place-items-center mx-auto max-w-7x1">
 
       <div class="flex gap-2 mb-4"><!--produto-->
@@ -98,7 +98,7 @@
     </main>
    </div>
 
-   <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-50 place-content-center place-items-center"><!--carrinho-->
+   <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-50 place-content-center place-items-center hidden" id="carrinho"><!--carrinho-->
     <div class="bg-white p-5 rounded-lg w-[85%] h-auto m-auto md:w-[550px] py-1">
       <h3 class="text-center font-bold mb-2">Meu carrinho</h3>
 
@@ -114,8 +114,10 @@
             bacon, cheddar, cebola caramelizada, salada 
             e molho especial</p>
           </div> 
-          <div class="ml-10">
+          <div class="ml-9 flex flex-col items-center">
             <button class="text-gray-500">remover</button>
+            <span class="text-xs mb-[5px]">( quantidade: 1 )</span>
+            <span class="text-xs">R$: 18.00</span>
           </div> 
         </div>
 
@@ -129,8 +131,10 @@
             bacon, cheddar, cebola caramelizada, salada 
             e molho especial</p>
           </div>  
-          <div class="ml-10">
+          <div class="ml-9 flex flex-col items-center">
             <button class="text-gray-500">remover</button>
+            <span class="text-xs mb-[5px]">( quantidade: 1 )</span>
+            <span class="text-xs">R$: 18.00</span>
           </div>
         </div>
         
@@ -138,7 +142,7 @@
 
       <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
       <p class="font-bold mt-4">Endereço de entrega:</p>
-      <input type="text" placeholder="Endereço completo, com numero e ponto de referência" id="addres" class="w-full border-2 p-1 rounded my-1">
+      <input type="text" placeholder="Endereço completo, numero e ponto de referência" id="addres" class="w-full border-2 p-1 rounded my-1">
 
       <p class="text-red-500 hidden" id="adress-warn">Digite seu endereço completo</p>
 
@@ -156,5 +160,7 @@
       <i class="bi bi-cart"></i>
     </button>
    </footer>
+
+   <script src="script.js"></script>
 </body>
 </html>
