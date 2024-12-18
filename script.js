@@ -49,10 +49,10 @@ function addAoCarrinho(nome, preco){//função responsavel por incluir os itens 
             quantidade: 1,
     })
     }
-    atualizaCarrinho(nome, preco )
+    atualizaCarrinho(nome, preco, quantidade )
 }
 
-function atualizaCarrinho(nome, preco){
+function atualizaCarrinho(nome, preco, quantidade){
     itensCarrinho.innerHTML += `
         <div class="flex items-center gap-2 mb-[7px]">
           <div>
@@ -66,9 +66,10 @@ function atualizaCarrinho(nome, preco){
           </div> 
           <div class="ml-9 flex flex-col items-center">
             <button class="text-gray-500">remover</button>
-            <span class="text-xs mb-[5px]">( quantidade:  )</span>
+            <span class="text-xs mb-[5px]">( quantidade: ${quantidade} )</span>
             <span class="text-xs">R$: ${preco}</span>
           </div> 
         </div>
     `
+    let total = 0;
 }
