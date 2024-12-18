@@ -49,10 +49,10 @@ function addAoCarrinho(nome, preco){//função responsavel por incluir os itens 
             quantidade: 1,
     })
     }
-    atualizaCarrinho(nome, preco, quantidade )
+    atualizaCarrinho(nome, preco )
 }
 
-function atualizaCarrinho(nome, preco, quantidade){
+function atualizaCarrinho(nome, preco){
     itensCarrinho.innerHTML += `
         <div class="flex items-center gap-2 mb-[7px]">
           <div>
@@ -71,5 +71,5 @@ function atualizaCarrinho(nome, preco, quantidade){
           </div> 
         </div>
     `
-    let total = 0;
+    
 }
