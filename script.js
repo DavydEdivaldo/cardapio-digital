@@ -209,7 +209,7 @@ function VerificaHrarioDeFuncionamento(){
         sectionAberto.classList.add('bg-red-500');
         return true;
     }
-    if(diasDeFuncionamento == 6 || diasDeFuncionamento == 2){
+    if(diasDeFuncionamento == 1 || diasDeFuncionamento == 2){
         const sectionAberto = document.getElementById("data-span");
         sectionAberto.classList.remove("bg-green-600");
         sectionAberto.classList.remove("sombra");
