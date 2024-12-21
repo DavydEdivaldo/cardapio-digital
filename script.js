@@ -184,7 +184,7 @@ enviarPedido.addEventListener('click', function(){
     console.log(itensParaEnviar)
 
     const pedido = encodeURI(itensParaEnviar);
-    const contato = "81992384292"
+    const contato = "992384292"
     window.open(`https://wa.me/${contato}?text=${pedido} Endereço: ${endereco.value}`, "_blank")
 
     produtosDoCarrinho = [];

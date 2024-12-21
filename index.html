@@ -195,6 +195,59 @@ function removerItensdoCarrinho(name){
         salvarCarrinhoNoLocalStorage(); // Salva no localStorage após remover o item
     }
 }
+//verifica se o endereço foi digitado para poder enviar o pedido
+endereco.addEventListener('input', function(event){
+    let ValorEndereco = event.target.value;
+
+    if(ValorEndereco !== ""){
+        enderecoVazio.classList.add("hidden");
+        endereco.classList.remove("border-red-500");
+    }
+})
+// verifica se tem itens do carrinho para poder enviar
+enviarPedido.addEventListener('click', function(){
+
+    let estaFechado = VerificaHrarioDeFuncionamento();
+    if(estaFechado == true){
+        Toastify({
+            text: "Estamos fechados no momento!",
+            duration: 3000,
+            close: true,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "red",
+            }
+        }).showToast();
+        return;
+    }
+    
+
+    if(produtosDoCarrinho.length === 0) return;
+
+    if(endereco.value === ""){
+        enderecoVazio.classList.remove('hidden');
+        endereco.classList.add('border-red-500');
+        return;
+    }
+
+
+    //enviar para wpp
+    const itensParaEnviar = produtosDoCarrinho.map(item => {
+        return(`
+            ${item.nome}, Quantidade: (${item.quantidade}), R$ ${item.preco}    
+        `)
+    }).join("")
+    console.log(itensParaEnviar)
+
+    const pedido = encodeURI(itensParaEnviar);
+    const contato = "992384292"
+    window.open(`https://wa.me/${contato}?text=${pedido} Endereço: ${endereco.value}`, "_blank")
+
+    produtosDoCarrinho = [];
+    atualizaCarrinho();
+})
 
 function salvarCarrinhoNoLocalStorage(){
     // Salva os itens do carrinho no localStorage
