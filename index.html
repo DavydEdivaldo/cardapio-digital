@@ -174,13 +174,13 @@ function addAoCarrinho(nome, preco){
     atualizaCarrinho();
     salvarCarrinhoNoLocalStorage(); // Salva no localStorage após adicionar o item
 }
-itensCarrinho.addEventListener('click', function(event){
+    itensCarrinho.addEventListener('click', function(event){
     if(event.target.classList.contains("remove-from-cart-btn")){
         const name = event.target.getAttribute('data-name');
         removerItensdoCarrinho(name);
     }
 });
-function removerItensdoCarrinho(name){
+        function removerItensdoCarrinho(name){
     const index = produtosDoCarrinho.findIndex(item => item.nome === name);
 
     if (index !== -1) {
@@ -195,8 +195,12 @@ function removerItensdoCarrinho(name){
         salvarCarrinhoNoLocalStorage(); // Salva no localStorage após remover o item
     }
 }
+    function salvarCarrinhoNoLocalStorage(){
+        // Salva os itens do carrinho no localStorage
+        localStorage.setItem('carrinho', JSON.stringify(produtosDoCarrinho));
+    }
 //verifica se o endereço foi digitado para poder enviar o pedido
-endereco.addEventListener('input', function(event){
+    endereco.addEventListener('input', function(event){
     let ValorEndereco = event.target.value;
 
     if(ValorEndereco !== ""){
@@ -205,7 +209,7 @@ endereco.addEventListener('input', function(event){
     }
 })
 // verifica se tem itens do carrinho para poder enviar
-enviarPedido.addEventListener('click', function(){
+    enviarPedido.addEventListener('click', function(){
 
     let estaFechado = VerificaHrarioDeFuncionamento();
     if(estaFechado == true){
@@ -231,7 +235,7 @@ enviarPedido.addEventListener('click', function(){
         endereco.classList.add('border-red-500');
         return;
     }
-
+  
 
     //enviar para wpp
     const itensParaEnviar = produtosDoCarrinho.map(item => {
@@ -248,11 +252,6 @@ enviarPedido.addEventListener('click', function(){
     produtosDoCarrinho = [];
     atualizaCarrinho();
 })
-
-function salvarCarrinhoNoLocalStorage(){
-    // Salva os itens do carrinho no localStorage
-    localStorage.setItem('carrinho', JSON.stringify(produtosDoCarrinho));
-}
 
 
      </script>
