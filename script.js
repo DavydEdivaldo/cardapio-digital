@@ -178,7 +178,9 @@ enviarPedido.addEventListener('click', function(){
     //enviar para wpp
     const itensParaEnviar = produtosDoCarrinho.map(item => {
         return(`
-            ${item.nome}, Quantidade: (${item.quantidade}), R$ ${item.preco}    
+            ${item.nome}
+            Quantidade: (${item.quantidade})
+            R$ ${item.preco}    
         `)
     }).join("")
     console.log(itensParaEnviar)
