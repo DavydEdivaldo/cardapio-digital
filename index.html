@@ -244,9 +244,7 @@ function addAoCarrinho(nome, preco){
 
     //enviar para wpp
     const itensParaEnviar = produtosDoCarrinho.map(item => {
-        return(`
-            ${item.nome}, Quantidade: (${item.quantidade}), R$ ${item.preco}    
-        `)
+        return(`${item.nome}: Quantidade: (${item.quantidade}) R$:${item.preco} ||`)
     }).join("")
     console.log(itensParaEnviar)
 
@@ -256,7 +254,7 @@ function addAoCarrinho(nome, preco){
 
     produtosDoCarrinho = [];
     atualizaCarrinho();
-})
+});
 
 
      </script>
