@@ -179,7 +179,7 @@ enviarPedido.addEventListener('click', function(){
     const itensParaEnviar = produtosDoCarrinho.map(item => {
         return(`${item.nome}: Quantidade: (${item.quantidade}) R$:${item.preco} ||`)
     }).join("")
-    console.log(itensParaEnviar)
+    
 
     const pedido = encodeURI(itensParaEnviar);
     const contato = "992384292"
